@@ -1,8 +1,10 @@
 #!/bin/bash
 #This script runs git commands to push to remote repository
 
-#git add . || git commit -m 'A new file' || git push
-
+echo "please enter a commit message"
+read commit_message
 git add -A
-git commit -m 'This is my initial commit'
+git commit -m "$commit_message"
 git push
+
+echo "Push successful with commit message as: $commit_message"
