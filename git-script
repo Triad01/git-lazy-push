@@ -1,0 +1,8 @@
+#!/bin/bash
+#This script runs git commands to push to remote repository
+
+#git add . || git commit -m 'A new file' || git push
+
+git add -A
+git commit -m 'This is my initial commit'
+git push
